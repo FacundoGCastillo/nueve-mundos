@@ -1,0 +1,377 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "UrbanJungle";
+    src: url("../fonts/UrbanJungleDEMO.otf");
+}
+
+html {
+    font-size: 62.5%;
+}
+header {
+    background-color: black;
+    position: relative;
+}
+
+main {
+    background-color:#222225;
+    height: 100%;
+    padding-top: 20px;
+
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.marquee{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.iconos {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+    z-index: 999;
+    font-size: 3rem;
+}
+
+.iconos a,
+.iconos a:visited,
+.iconos i {
+    color: white;
+}
+
+.titulo-seccion{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+margin: 40px 0;
+}
+
+.titulo-seccion img{
+width: 70px;
+opacity: 0.9;
+}
+
+.titulo-seccion h2{
+color: white;
+font-size: 28px;
+font-weight: bold;
+margin: 0;
+text-transform: uppercase;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1{
+    font-family: "UrbanJungle";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+
+    z-index: 2;
+}
+
+.articulo {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 black;
+    float: left;
+    width: 350px;
+}
+
+.articulo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.articulo:hover {
+    border: 2px solid rgb(252, 252, 252);
+    transform: perspective();
+}
+
+
+.nav a, .nav a:visited {
+    color: rgb(239, 245, 245);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: gray;
+}
+
+.cont1,.cont2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+
+
+.piearticulo {
+    text-align: center;
+    color: azure;
+    text-shadow: 2px 2px 5px rgb(124, 190, 252);
+    padding: 10px;
+}
+
+
+.piepagina a,
+.piepagina a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+/* .footerinfo{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 50px 80px;
+} */
+
+.footerinfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    padding: 50px 80px;
+}
+
+.logofooter {
+    text-align: center;
+}
+
+.logofooter img {
+    width: 180px;
+}
+
+.logofooter p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.columna h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-bottom: 8px;
+}
+
+.columna a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+.columna a:hover {
+    color: gray;
+}
+
+.redes{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.copy {
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #999;
+}
+
+.piepagina ul {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3rem;
+        top: 25%;
+    }
+
+    .iconos {
+        top: 10px;
+        right: 5px;
+        font-size: 0.5rem;
+    }
+
+    .nav {
+        width: 90%;
+        bottom: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        font-size: 1rem;
+    }
+
+    .marquee {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .titulo-seccion {
+        gap: 8px;
+        margin: 30px 0;
+    }
+
+    .titulo-seccion img {
+        width: 40px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+.cont1,
+    .cont2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cont1 > div,
+    .cont2 > div {
+        width: 45%;
+    }
+
+    .articulo {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .articulo img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .piearticulo h3 {
+        font-size: 1.3rem;
+    }
+
+    .footerinfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+        text-align: center;
+    }  
+
+    .logofooter img {
+        width: 140px;
+    }
+}
+
+.registro{
+    background-color: #222225;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 400px;
+    background: black;
+    padding: 40px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario h2{
+    position: static;
+    transform: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.formulario input{
+    padding: 12px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario button{
+    padding: 12px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+.formulario button:hover{
+    background: #b8b8b8;
+}
