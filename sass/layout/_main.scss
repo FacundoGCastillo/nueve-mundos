@@ -1,0 +1,127 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extends";
+@use "../utilities/mixins" as *;
+
+main {
+    background-color: $color-fondo;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.marquee{
+    background-color: $color-blanco;
+    color: $color-negro;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+
+    img {
+        width: 70px;
+        opacity: 0.9;
+    }
+
+    h2 {
+        color: $color-blanco;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.piepagina {
+    ul {
+        list-style: none;
+    }
+
+    a {
+        color: $color-blanco;
+        text-decoration: none;
+
+        &:visited {
+            color: $color-blanco;
+        }
+    }
+}
+
+.cambiar {
+    p {
+        font-size: 2rem;
+    }
+}
+
+.fondo {
+    color: lightblue;
+    
+    .compras {
+        margin-left: 30px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    ol {
+        margin-left: 40px;
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+}
+
+.registro{
+    background-color: $color-fondo;
+    min-height: 100vh;
+
+@include flex(center, center, row);
+}
+
+.formulario {
+    width: 400px;
+    background: $color-negro;
+    padding: 40px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+        position: static;
+        transform: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        color: $color-blanco;
+        text-align: center;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+    @extend %boton-base;
+    background: $color-blanco;
+    color: $color-negro;
+
+        &:hover {
+            background: #b8b8b8;
+        }
+    }
+}

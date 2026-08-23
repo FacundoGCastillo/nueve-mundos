@@ -1,0 +1,94 @@
+@use "../utilities/variables" as *;
+
+header {
+    background-color: $color-negro;
+    position: relative;
+}
+
+.iconos {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+    z-index: 999;
+    font-size: 3rem;
+
+    a {
+        color: $color-blanco;
+
+        &:visited {
+            color: $color-blanco;
+        }
+    }
+
+    i {
+        color: $color-blanco;
+    }
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-family: $font-logo;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-blanco;
+    font-size: 20rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 2;
+
+    .navbar-nav {
+        gap: 40px;
+    }
+
+    .nav-link {
+        color: $color-blanco;
+        font-size: 2rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-hover;
+        }
+    }
+}
+
+// .nav {
+//     position: absolute;
+//     bottom: 20px;
+//     left: 50%;
+//     transform: translateX(-50%);
+
+//     display: flex;
+//     list-style: none;
+//     gap: 40px;
+//     font-size: 20px;
+
+//     z-index: 2;
+
+//     a {
+//         color: rgb(239, 245, 245);
+//         text-decoration: none;
+
+//         &:visited {
+//             color: rgb(239, 245, 245);
+//         }
+
+//         &:hover {
+//             color: $color-hover;
+//         }
+//     }
+// }
