@@ -30,4 +30,4 @@ Facundo
 
 ## Sitio web
 
-Próximamente.
+https://cerulean-genie-7c66aa.netlify.app/
