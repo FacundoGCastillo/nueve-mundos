@@ -2,7 +2,7 @@
 
 
 footer {
-    background-color: $color-negro;
+    background-color: $color-principal;
     color: $color-texto-footer;
 }
 
@@ -24,7 +24,7 @@ footer {
     p {
         margin-top: 10px;
         font-size: 14px;
-        color: $color-blanco;
+        color: $color-secundario;
     }
 }
 
@@ -46,7 +46,7 @@ footer {
     a {
         display: block;
         text-decoration: none;
-        color: $color-blanco;
+        color: $color-secundario;
         font-size: 14px;
         margin-bottom: 8px;
 

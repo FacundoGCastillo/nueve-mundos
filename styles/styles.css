@@ -1,3 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "UrbanJungle";
+  src: url("../fonts/UrbanJungleDEMO.otf");
+}
+html {
+  font-size: 62.5%;
+}
+
 header {
   background-color: black;
   position: relative;
@@ -251,7 +265,7 @@ footer {
   transform: scale(1.03);
 }
 
-.cont1, .cont2 {
+.contenedor-productos {
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -352,19 +366,6 @@ footer {
   .logofooter img {
     width: 140px;
   }
-}
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "UrbanJungle";
-  src: url("../fonts/UrbanJungleDEMO.otf");
-}
-html {
-  font-size: 62.5%;
 }
 
 /*# sourceMappingURL=styles.css.map */

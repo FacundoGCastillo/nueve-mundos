@@ -3,7 +3,7 @@
 .articulo {
     margin: 10px 20px;
     box-shadow: 0 4px 8px 0 lightblue,
-                0 6px 20px 0 $color-negro;
+                0 6px 20px 0 $color-principal;
     float: left;
     width: 350px;
     transition: transform 0.3s ease;
@@ -20,7 +20,7 @@
     }
 }
 
-.cont1,.cont2 {
+.contenedor-productos {
     display: flex;
     justify-content: space-around;
     gap: 20px;
