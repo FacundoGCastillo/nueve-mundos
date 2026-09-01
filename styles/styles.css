@@ -331,16 +331,14 @@ footer {
     font-size: 2rem;
     text-align: center;
   }
-  .cont1,
-  .cont2 {
+  .contenedor-productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
-  .cont1 > div,
-  .cont2 > div {
+  .contenedor-productos > div {
     width: 45%;
   }
   .articulo {

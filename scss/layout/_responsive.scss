@@ -57,19 +57,17 @@
     }
     }
 
-.cont1,
-    .cont2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
+.contenedor-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
-    .cont1 > div,
-    .cont2 > div {
+    > div {
         width: 45%;
     }
+}
 
 .articulo {
     width: 100%;
