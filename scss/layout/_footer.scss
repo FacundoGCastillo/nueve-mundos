@@ -1,71 +1,70 @@
 @use "../utilities/variables" as *;
 
-
 footer {
-    background-color: $color-principal;
-    color: $color-texto-footer;
+  background-color: $color-principal;
+  color: $color-texto-footer;
 }
 
 .footerinfo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 120px;
-    padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  padding: 50px 80px;
 }
 
 .logofooter {
-    text-align: center;
+  text-align: center;
 
-    img {
-        width: 180px;
-    }
+  img {
+    width: 180px;
+  }
 
-    p {
-        margin-top: 10px;
-        font-size: 14px;
-        color: $color-secundario;
-    }
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: $color-secundario;
+  }
 }
 
 .columna {
-    h2 {
-        margin-bottom: 15px;
-        font-size: 16px;
+  h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
     }
+  }
 
-    ul {
-        list-style: none;
-        padding: 0;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $color-secundario;
+    font-size: 14px;
+    margin-bottom: 8px;
 
-        li {
-            margin-bottom: 8px;
-        }
+    &:hover {
+      color: $color-hover;
     }
-
-    a {
-        display: block;
-        text-decoration: none;
-        color: $color-secundario;
-        font-size: 14px;
-        margin-bottom: 8px;
-
-        &:hover {
-            color: $color-hover;
-        }
-    }
+  }
 }
 
-.redes{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .copy {
-    border-top: 1px solid #222;
-    text-align: center;
-    padding: 15px;
-    font-size: 12px;
-    color: #999;
+  border-top: 1px solid #222;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #999;
 }

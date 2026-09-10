@@ -1,0 +1,55 @@
+.seccion-cambios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 75vh;
+  margin: 0 auto;
+}
+
+.imagen-cambios {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-cambios img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  display: block;
+}
+
+.info-cambios {
+  color: white;
+}
+
+.info-cambios h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-cambios {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #d0d0d0;
+}
+
+.item-cambio {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.item-cambio h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.item-cambio p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #cfcfcf;
+}

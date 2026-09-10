@@ -115,38 +115,6 @@ main {
   text-transform: uppercase;
 }
 
-.piepagina ul {
-  list-style: none;
-}
-.piepagina a {
-  color: white;
-  text-decoration: none;
-}
-.piepagina a:visited {
-  color: white;
-}
-
-.cambiar p {
-  font-size: 2rem;
-}
-
-.fondo {
-  color: lightblue;
-}
-.fondo .compras {
-  margin-left: 30px;
-}
-.fondo h2 {
-  font-size: 3rem;
-}
-.fondo ol {
-  margin-left: 40px;
-  font-size: 2rem;
-}
-.fondo p {
-  font-size: 2rem;
-}
-
 .registro {
   background-color: #222225;
   min-height: 100vh;
@@ -249,27 +217,28 @@ footer {
 }
 
 .articulo {
-  margin: 10px 20px;
+  margin: 10px 0;
   box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 black;
-  float: left;
-  width: 350px;
-  transition: transform 0.3s ease;
+  width: 100%;
+  overflow: hidden;
 }
 .articulo img {
+  display: block;
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 260px;
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
 }
 .articulo:hover {
-  border: 2px solid rgb(252, 252, 252);
-  transform: scale(1.03);
+  outline: 2px solid rgb(252, 252, 252);
 }
 
 .contenedor-productos {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 100%;
+  padding: 0 20px;
 }
 
 .piearticulo {
@@ -287,6 +256,561 @@ footer {
   margin-bottom: 4px;
 }
 
+.destacados {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  color: white;
+}
+
+.titulo-destacados {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.titulo-destacados h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.titulo-destacados p {
+  font-size: 1.5rem;
+  color: #cfcfcf;
+}
+
+.grupo-destacados {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 60px;
+}
+
+.producto-destacado {
+  width: 280px;
+  flex-shrink: 0;
+  background-color: #1b1b1d;
+  border: 1px solid #444;
+  padding: 15px;
+  text-align: center;
+}
+.producto-destacado img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background-color: white;
+  display: block;
+  margin-bottom: 15px;
+}
+.producto-destacado h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.producto-destacado p {
+  font-size: 1.5rem;
+  color: #cfcfcf;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+
+.seccion-cambios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 75vh;
+  margin: 0 auto;
+}
+
+.imagen-cambios {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-cambios img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  display: block;
+}
+
+.info-cambios {
+  color: white;
+}
+
+.info-cambios h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-cambios {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #d0d0d0;
+}
+
+.item-cambio {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.item-cambio h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.item-cambio p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #cfcfcf;
+}
+
+.como-comprar {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.titulo-compra {
+  margin-bottom: 50px;
+}
+.titulo-compra h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.titulo-compra p {
+  font-size: 1.8rem;
+  color: #cfcfcf;
+}
+
+.pasos-compra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 45px;
+}
+
+.paso {
+  position: relative;
+  padding: 40px 20px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+  transition: transform 0.3s ease;
+}
+.paso:hover {
+  transform: translateY(-8px);
+}
+.paso span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.paso i {
+  font-size: 4rem;
+  margin: 25px 0;
+}
+.paso h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.paso p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #cfcfcf;
+}
+
+.boton-comprar {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.boton-comprar:hover {
+  transform: scale(1.05);
+}
+
+.estilos-perfume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  color: white;
+}
+
+.gif-perfume {
+  width: 100%;
+}
+.gif-perfume img {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.info-perfumes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo-perfumes {
+  margin-bottom: 30px;
+}
+.titulo-perfumes h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.titulo-perfumes p {
+  font-size: 1.7rem;
+  color: #cfcfcf;
+}
+
+.tipo-perfume {
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+.tipo-perfume h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.tipo-perfume p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #cfcfcf;
+}
+
+.seccion-remeras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  color: white;
+}
+
+.imagen-remeras {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-remeras img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.info-remeras {
+  text-align: left;
+}
+.info-remeras h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.info-remeras p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin-bottom: 25px;
+}
+
+.subtitulo-remeras {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.boton-remeras {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.banner-marcas {
+  width: 100%;
+  margin: 20px 0;
+}
+.banner-marcas img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+
+.estilos-buzos {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+}
+
+.titulo-buzos {
+  margin-bottom: 35px;
+}
+.titulo-buzos h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.titulo-buzos p {
+  font-size: 1.7rem;
+  color: #cfcfcf;
+}
+
+.tipos-buzos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tipo-buzo {
+  padding: 40px 20px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+}
+.tipo-buzo i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.tipo-buzo h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.tipo-buzo p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #cfcfcf;
+}
+
+.carrito {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  color: white;
+}
+.carrito > h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carrito-contenido {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.productos-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.producto-carrito {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+}
+.producto-carrito img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  background-color: white;
+}
+
+.info-producto-carrito {
+  flex: 1;
+}
+.info-producto-carrito h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.info-producto-carrito p {
+  font-size: 1.5rem;
+  color: #cfcfcf;
+  margin-bottom: 15px;
+}
+
+.cantidad-carrito {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.cantidad-carrito button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #555;
+  background-color: transparent;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.cantidad-carrito span {
+  font-size: 1.6rem;
+}
+
+.info-producto-carrito .precio-carrito {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.resumen-carrito {
+  padding: 30px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+}
+.resumen-carrito h3 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.fila-resumen {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.total-carrito {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.boton-finalizar {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seguir-comprando {
+  display: inline-block;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.intro-pantalones {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+.intro-pantalones h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.intro-pantalones p {
+  font-size: 1.5rem;
+  color: #cfcfcf;
+  margin-top: 15px;
+}
+
+.estilos-pantalones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hero-novedades {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 450px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.hero-novedades img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(45%);
+}
+
+.contenido-novedades {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  text-align: center;
+  color: white;
+}
+.contenido-novedades p {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contenido-novedades h2 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+.contenido-novedades span {
+  display: block;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+.contenido-novedades a {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -295,7 +819,7 @@ footer {
   .iconos {
     top: 10px;
     right: 5px;
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
   .navbar {
     position: relative;
@@ -332,24 +856,19 @@ footer {
     text-align: center;
   }
   .contenedor-productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-  .contenedor-productos > div {
-    width: 45%;
+    padding: 0 15px;
   }
   .articulo {
     width: 100%;
     margin: 0;
-    float: none;
   }
   .articulo img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
   }
   .piearticulo h3 {
     font-size: 1.3rem;
@@ -363,6 +882,252 @@ footer {
   }
   .logofooter img {
     width: 140px;
+  }
+  .seccion-cambios {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 92%;
+    margin: 30px auto;
+  }
+  .imagen-cambios {
+    height: auto;
+  }
+  .imagen-cambios img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+  }
+  .info-cambios h2 {
+    font-size: 2.8rem;
+  }
+  .intro-cambios {
+    font-size: 1.6rem;
+  }
+  .item-cambio h3 {
+    font-size: 1.8rem;
+  }
+  .item-cambio p {
+    font-size: 1.5rem;
+  }
+  .como-comprar {
+    width: 92%;
+    min-height: auto;
+    padding: 35px 0;
+  }
+  .titulo-compra {
+    margin-bottom: 30px;
+  }
+  .titulo-compra h2 {
+    font-size: 3rem;
+  }
+  .titulo-compra p {
+    font-size: 1.6rem;
+  }
+  .pasos-compra {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .paso {
+    padding: 35px 20px;
+  }
+  .paso i {
+    font-size: 3.5rem;
+    margin: 20px 0;
+  }
+  .paso h3 {
+    font-size: 1.8rem;
+  }
+  .paso p {
+    font-size: 1.5rem;
+  }
+  .boton-comprar {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.5rem;
+  }
+  .estilos-perfume {
+    width: 92%;
+    margin: 30px auto;
+  }
+  .titulo-perfumes {
+    margin-bottom: 25px;
+  }
+  .titulo-perfumes h2 {
+    font-size: 2.8rem;
+  }
+  .titulo-perfumes p {
+    font-size: 1.5rem;
+  }
+  .tipo-perfume {
+    padding: 30px 20px;
+  }
+  .tipo-perfume h3 {
+    font-size: 1.8rem;
+  }
+  .tipo-perfume p {
+    font-size: 1.4rem;
+  }
+  .seccion-remeras {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 92%;
+    margin: 30px auto;
+  }
+  .imagen-remeras {
+    height: auto;
+  }
+  .imagen-remeras img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .info-remeras {
+    text-align: center;
+  }
+  .info-remeras h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .info-remeras p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .subtitulo-remeras {
+    font-size: 1.3rem;
+  }
+  .boton-remeras {
+    padding: 13px 25px;
+    font-size: 1.5rem;
+  }
+  .estilos-buzos {
+    width: 92%;
+    margin: 30px auto;
+  }
+  .titulo-buzos {
+    margin-bottom: 25px;
+  }
+  .titulo-buzos h2 {
+    font-size: 2.8rem;
+  }
+  .titulo-buzos p {
+    font-size: 1.5rem;
+  }
+  .tipos-buzos {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .tipo-buzo {
+    padding: 30px 20px;
+  }
+  .tipo-buzo i {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+  }
+  .tipo-buzo h3 {
+    font-size: 1.8rem;
+  }
+  .tipo-buzo p {
+    font-size: 1.4rem;
+  }
+  .carrito {
+    width: 92%;
+    margin: 30px auto;
+  }
+  .carrito > h2 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+  }
+  .carrito-contenido {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .producto-carrito {
+    gap: 15px;
+    padding: 15px;
+  }
+  .producto-carrito img {
+    width: 120px;
+    height: 120px;
+  }
+  .info-producto-carrito h3 {
+    font-size: 1.8rem;
+  }
+  .info-producto-carrito p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .cantidad-carrito {
+    gap: 10px;
+  }
+  .cantidad-carrito button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+  }
+  .cantidad-carrito span {
+    font-size: 1.5rem;
+  }
+  .info-producto-carrito .precio-carrito {
+    font-size: 1.8rem;
+  }
+  .resumen-carrito {
+    padding: 20px;
+  }
+  .resumen-carrito h3 {
+    font-size: 2rem;
+  }
+  .fila-resumen {
+    font-size: 1.5rem;
+  }
+  .total-carrito {
+    font-size: 1.8rem;
+  }
+  .boton-finalizar {
+    font-size: 1.4rem;
+  }
+  .seguir-comprando {
+    font-size: 1.4rem;
+  }
+  .destacados {
+    width: 92%;
+    margin: 30px auto;
+  }
+  .titulo-destacados {
+    margin-bottom: 20px;
+  }
+  .titulo-destacados h2 {
+    font-size: 2.5rem;
+  }
+  .titulo-destacados p {
+    font-size: 1.4rem;
+  }
+  .grupo-destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 30px;
+  }
+  .producto-destacado {
+    width: 100%;
+    padding: 10px;
+  }
+  .producto-destacado img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+  }
+  .producto-destacado h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .producto-destacado p {
+    font-size: 1.3rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
   }
 }
 

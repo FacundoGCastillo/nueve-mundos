@@ -3,125 +3,81 @@
 @use "../utilities/mixins" as *;
 
 main {
-    background-color: $color-fondo;
-    height: 100%;
-    padding-top: 20px;
+  background-color: $color-fondo;
+  height: 100%;
+  padding-top: 20px;
 }
 
-.marquee{
-    background-color: $color-secundario;
-    color: $color-principal;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 1.2rem;
-    font-weight: 500;
+.marquee {
+  background-color: $color-secundario;
+  color: $color-principal;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .titulo-seccion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
 
-    img {
-        width: 70px;
-        opacity: 0.9;
-    }
+  img {
+    width: 70px;
+    opacity: 0.9;
+  }
 
-    h2 {
-        color: $color-secundario;
-        font-size: 28px;
-        font-weight: bold;
-        margin: 0;
-        text-transform: uppercase;
-    }
+  h2 {
+    color: $color-secundario;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
 }
 
+.registro {
+  background-color: $color-fondo;
+  min-height: 100vh;
 
-
-.piepagina {
-    ul {
-        list-style: none;
-    }
-
-    a {
-        color: $color-secundario;
-        text-decoration: none;
-
-        &:visited {
-            color: $color-secundario;
-        }
-    }
-}
-
-.cambiar {
-    p {
-        font-size: 2rem;
-    }
-}
-
-.fondo {
-    color: lightblue;
-    
-    .compras {
-        margin-left: 30px;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    ol {
-        margin-left: 40px;
-        font-size: 2rem;
-    }
-
-    p{
-        font-size: 2rem;
-    }
-}
-
-.registro{
-    background-color: $color-fondo;
-    min-height: 100vh;
-
-@include flex(center, center, row);
+  @include flex(center, center, row);
 }
 
 .formulario {
-    width: 400px;
-    background: $color-principal;
-    padding: 40px;
-    border-radius: 10px;
+  width: 400px;
+  background: $color-principal;
+  padding: 40px;
+  border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-    h2 {
-        position: static;
-        transform: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 3rem;
-        color: $color-secundario;
-        text-align: center;
-    }
+  h2 {
+    position: static;
+    transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: $color-secundario;
+    text-align: center;
+  }
 
-    input {
-        padding: 12px;
-        font-size: 1.6rem;
-        border: none;
-        border-radius: 5px;
-    }
+  input {
+    padding: 12px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+  }
 
-    button {
+  button {
     @extend %boton-base;
     background: $color-secundario;
     color: $color-principal;
 
-        &:hover {
-            background: #b8b8b8;
-        }
+    &:hover {
+      background: #b8b8b8;
     }
+  }
 }

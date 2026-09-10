@@ -1,0 +1,49 @@
+.estilos-buzos {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+}
+
+.titulo-buzos {
+  margin-bottom: 35px;
+
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.7rem;
+    color: #cfcfcf;
+  }
+}
+
+.tipos-buzos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tipo-buzo {
+  padding: 40px 20px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+
+  i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #cfcfcf;
+  }
+}

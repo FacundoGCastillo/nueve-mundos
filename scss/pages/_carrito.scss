@@ -1,0 +1,131 @@
+.carrito {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  color: white;
+
+  > h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.carrito-contenido {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.productos-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.producto-carrito {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+
+  img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    background-color: white;
+  }
+}
+
+.info-producto-carrito {
+  flex: 1;
+
+  h3 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: #cfcfcf;
+    margin-bottom: 15px;
+  }
+}
+
+.cantidad-carrito {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+
+  button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #555;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  span {
+    font-size: 1.6rem;
+  }
+}
+
+.info-producto-carrito .precio-carrito {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.resumen-carrito {
+  padding: 30px;
+  border: 1px solid #444;
+  background-color: #1b1b1d;
+
+  h3 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+}
+
+.fila-resumen {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.total-carrito {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.boton-finalizar {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seguir-comprando {
+  display: inline-block;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
